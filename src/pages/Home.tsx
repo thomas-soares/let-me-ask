@@ -1,7 +1,15 @@
+import illustrationImg from "../assets/images/illustration.svg";
+
 export function Home() {
   return (
     <div>
-      <aside>Home</aside>
+      <aside>
+        <img
+          src={illustrationImg}
+          alt="Ilustração simbolizando perguntas e respostas"
+        />
+        Home
+      </aside>
     </div>
   );
 }
