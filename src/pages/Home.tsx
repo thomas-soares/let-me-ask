@@ -17,6 +17,7 @@ export function Home() {
           <img src={logoImg} alt="Let me ask" />
           <button>
             <img src={googleIconImg} alt="Logo do Google" />
+            Crie sua sala com o Google
           </button>
         </div>
       </main>
