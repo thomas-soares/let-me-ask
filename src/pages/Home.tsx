@@ -19,6 +19,11 @@ export function Home() {
             <img src={googleIconImg} alt="Logo do Google" />
             Crie sua sala com o Google
           </button>
+          <div className="separator">ou entre em uma sala</div>
+          <form>
+            <input type="text" placeholder="Digite o código da sala" />
+            <Button type="submit">Entrar na sala</Button>
+          </form>
         </div>
       </main>
     </div>
