@@ -3,6 +3,8 @@ import logoImg from "../assets/images/logo.svg";
 import googleIconImg from "../assets/images/google-icon.svg";
 
 export function Home() {
+  const history = useHistory();
+
   return (
     <div id="page-auth">
       <aside>
