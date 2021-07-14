@@ -4,6 +4,8 @@ import { NewRoom } from "./pages/NewRoom";
 export const AuthContext = createContext({} as any);
 
 function App() {
+  const [user, setUser] = useState();
+
   function signInWithGoogle() {}
 
   return (
