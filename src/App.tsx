@@ -1,6 +1,11 @@
 import { BrowserRouter, Route } from "react-router-dom";
 import { NewRoom } from "./pages/NewRoom";
 
+type AuthContextType = {
+  user: object;
+  signInWithGoogle: () => void;
+};
+
 export const AuthContext = createContext({} as any);
 
 function App() {
