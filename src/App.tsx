@@ -6,7 +6,7 @@ type AuthContextType = {
   signInWithGoogle: () => void;
 };
 
-export const AuthContext = createContext({} as any);
+export const AuthContext = createContext({} as AuthContextType);
 
 function App() {
   const [user, setUser] = useState();
