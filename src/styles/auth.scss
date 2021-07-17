@@ -3,6 +3,17 @@
   align-items: stretch;
   height: 100vh;
 
+  aside {
+    flex: 7;
+
+    background: #835afd;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .create-room {
     margin-top: 64px;
     height: 50px;
