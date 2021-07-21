@@ -47,6 +47,12 @@
     flex-direction: column;
     width: 100%;
     max-width: 320px;
+    align-items: stretch;
+    text-align: center;
+
+    > img {
+      align-items: center;
+    }
   }
 
   .create-room {
