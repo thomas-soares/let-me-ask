@@ -42,6 +42,13 @@
     justify-content: center;
   }
 
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+  }
+
   .create-room {
     margin-top: 64px;
     height: 50px;
