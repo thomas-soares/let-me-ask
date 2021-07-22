@@ -53,6 +53,14 @@
     > img {
       align-self: center;
     }
+
+    form {
+      input {
+        height: 50px;
+        border-radius: 8px;
+        padding: 0 16px;
+      }
+    }
   }
 
   .create-room {
