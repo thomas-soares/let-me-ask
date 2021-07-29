@@ -5,6 +5,10 @@ import googleIconImg from "../assets/images/google-icon.svg";
 export function Home() {
   const history = useHistory();
 
+  function handleCreateRoom() {
+    history.push("/rooms/new");
+  }
+
   return (
     <div id="page-auth">
       <aside>
