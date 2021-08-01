@@ -19,5 +19,9 @@ export function AuthContextProvider(props) {
     }
   }
 
-  return <AuthContext.Provider></AuthContext.Provider>;
+  return (
+    <AuthContext.Provider value={{ user, signInWithGoogle }}>
+      {props.children}
+    </AuthContext.Provider>
+  );
 }
