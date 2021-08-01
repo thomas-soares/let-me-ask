@@ -9,7 +9,7 @@ type AuthContextType = {
 export const AuthContext = createContext({} as AuthContextType);
 
 function App() {
-  const [user, setUser] = useState();
+  const [user, setUser] = useState<User>();
 
   function signInWithGoogle() {}
 
