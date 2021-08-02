@@ -11,7 +11,9 @@ export const AuthContext = createContext({} as AuthContextType);
 function App() {
   const [user, setUser] = useState<User>();
 
-  function signInWithGoogle() {}
+  function signInWithGoogle() {
+    const provider = new firebase.auth.GoogleAuthProvider();
+  }
 
   return (
     <BrowserRouter>
