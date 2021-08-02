@@ -13,6 +13,8 @@ function App() {
 
   function signInWithGoogle() {
     const provider = new firebase.auth.GoogleAuthProvider();
+
+    const result = await auth.signInWithPopup(provider);
   }
 
   return (
