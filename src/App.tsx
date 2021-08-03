@@ -21,6 +21,12 @@ function App() {
       if (!displayName || !photoURL) {
         throw new Error("Missing information from Google Account");
       }
+
+      setUser({
+        id: uid,
+        name: displayName,
+        avatar: photoURL,
+      });
     }
   }
 
