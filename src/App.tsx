@@ -12,7 +12,11 @@ function App() {
   const [user, setUser] = useState<User>();
 
   useEffect(() => {
-    auth.onAuthStateChanged((user) => {});
+    const unsubscribe = auth.onAuthStateChanged((user) => {});
+
+    return () => {
+      unsubscribe();
+    };
   }, []);
 
   async function signInWithGoogle() {
