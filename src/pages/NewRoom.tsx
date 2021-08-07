@@ -26,7 +26,8 @@ export function NewRoom() {
             <Button type="submit">Criar sala</Button>
           </form>
           <p>
-            Quer entrar em uma sala existente? <a href="#">clique aqui</a>
+            Quer entrar em uma sala existente?{" "}
+            <a href="/new-room">clique aqui</a>
           </p>
         </div>
       </main>
