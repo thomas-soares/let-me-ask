@@ -34,7 +34,7 @@ export function Home() {
           <div className="separator">ou entre em uma sala</div>
           <form>
             <input type="text" placeholder="Digite o código da sala" />
-            <Button type="submit">Criar sala</Button>
+            <Button type="submit">Entrar na sala</Button>
           </form>
         </div>
       </main>
