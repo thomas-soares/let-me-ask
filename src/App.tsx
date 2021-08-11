@@ -4,6 +4,12 @@ import { BrowserRouter, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { NewRoom } from "./pages/NewRoom";
 
+type User = {
+  id: string;
+  name: string;
+  avatar: string;
+};
+
 type AuthContextType = {
   user: object;
   signInWithGoogle: () => void;
