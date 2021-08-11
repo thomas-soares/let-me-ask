@@ -11,7 +11,7 @@ type User = {
 };
 
 type AuthContextType = {
-  user: object;
+  user: User;
   signInWithGoogle: () => void;
 };
 
