@@ -28,7 +28,7 @@ export function NewRoom() {
           <img src={logoImg} alt="Let me ask" />
           <h1>{user?.name}</h1>
           <h2>Criar uma nova sala</h2>
-          <form>
+          <form onSubmit={handleCreateRoom}>
             <input type="text" placeholder="Nome da sala" />
             <Button type="submit">Criar sala</Button>
           </form>
