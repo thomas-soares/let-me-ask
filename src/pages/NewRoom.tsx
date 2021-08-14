@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import illustrationImg from "../assets/images/illustration.svg";
@@ -10,6 +11,8 @@ import "../styles/auth.scss";
 
 export function NewRoom() {
   const { user } = useAuth();
+
+  const [newRoom, setNewRoom] = useState("");
 
   async function handleCreateRoom() {}
 
