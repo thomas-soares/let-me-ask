@@ -14,7 +14,9 @@ export function NewRoom() {
 
   const [newRoom, setNewRoom] = useState("");
 
-  async function handleCreateRoom(event: FormEvent) {}
+  async function handleCreateRoom(event: FormEvent) {
+    event.preventDefault();
+  }
 
   return (
     <div id="page-auth">
