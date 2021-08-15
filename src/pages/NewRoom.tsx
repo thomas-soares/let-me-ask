@@ -14,7 +14,7 @@ export function NewRoom() {
 
   const [newRoom, setNewRoom] = useState("");
 
-  async function handleCreateRoom() {}
+  async function handleCreateRoom(event) {}
 
   return (
     <div id="page-auth">
