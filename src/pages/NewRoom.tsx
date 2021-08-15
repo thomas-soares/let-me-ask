@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { Link } from "react-router-dom";
 
 import illustrationImg from "../assets/images/illustration.svg";
@@ -14,7 +14,7 @@ export function NewRoom() {
 
   const [newRoom, setNewRoom] = useState("");
 
-  async function handleCreateRoom(event) {}
+  async function handleCreateRoom(event: FormEvent) {}
 
   return (
     <div id="page-auth">
