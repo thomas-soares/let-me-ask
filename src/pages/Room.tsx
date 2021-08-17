@@ -8,6 +8,8 @@ export function Room() {
           <img src={logoImg} alt="Let me ask" />
         </div>
       </header>
+
+      <main className="content"></main>
     </div>
   );
 }
