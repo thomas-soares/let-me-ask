@@ -6,6 +6,7 @@ export function Room() {
       <header>
         <div className="content">
           <img src={logoImg} alt="Let me ask" />
+          <div>codigo</div>
         </div>
       </header>
 
