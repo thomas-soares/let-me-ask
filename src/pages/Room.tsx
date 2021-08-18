@@ -15,6 +15,13 @@ export function Room() {
           <h1>Sala React</h1>
           <span>4 perguntas</span>
         </div>
+
+        <form>
+          <textarea placeholder="Oque você quer perguntar?" />
+          <div className="form-footer">
+            <span>Para enviar uma pergunta, faça seu login.</span>
+          </div>
+        </form>
       </main>
     </div>
   );
