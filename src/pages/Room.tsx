@@ -18,7 +18,11 @@ export function Room() {
 
   const roomId = params.id;
 
-  async function handleSendQuestion() {}
+  async function handleSendQuestion() {
+    if (newQuestion.trim() === "") {
+      return;
+    }
+  }
 
   return (
     <div id="page-room">
