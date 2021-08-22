@@ -6,6 +6,8 @@ import logoImg from "../assets/images/logo.svg";
 import { Button } from "../components/Button";
 import { RoomCode } from "../components/RoomCode";
 
+import { useAuth } from "../hooks/useAuth";
+
 import "../styles/room.scss";
 
 type RoomParams = {
@@ -13,6 +15,7 @@ type RoomParams = {
 };
 
 export function Room() {
+  const { user } = useAuth();
   const params = useParams<RoomParams>();
   const [newQuestion, setNewQuestion] = useState("");
 
@@ -21,6 +24,10 @@ export function Room() {
   async function handleSendQuestion() {
     if (newQuestion.trim() === "") {
       return;
+    }
+
+    if (!user) {
+      throw new Error("You must be logged in");
     }
   }
 
