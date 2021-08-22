@@ -69,7 +69,9 @@ export function Room() {
             <span>
               Para enviar uma pergunta, <button>faça seu login</button>.
             </span>
-            <Button type="submit">Enviar pergunta</Button>
+            <Button type="submit" disabled={!user}>
+              Enviar pergunta
+            </Button>
           </div>
         </form>
       </main>
