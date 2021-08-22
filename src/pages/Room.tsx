@@ -29,6 +29,16 @@ export function Room() {
     if (!user) {
       throw new Error("You must be logged in");
     }
+
+    const question = {
+      content: newQuestion,
+      author: {
+        name: user.name,
+        avatar: user.avatar,
+      },
+      isHighlighted: false,
+      isAnswered: false,
+    };
   }
 
   return (
