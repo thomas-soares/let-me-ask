@@ -15,6 +15,8 @@ export function Room() {
   const params = useParams<RoomParams>();
   const roomId = params.id;
 
+  async function handleSendQuestion() {}
+
   return (
     <div id="page-room">
       <header>
