@@ -13,6 +13,8 @@ type RoomParams = {
 
 export function Room() {
   const params = useParams<RoomParams>();
+  const [newQuestion, setNewQuestion] = useState("");
+
   const roomId = params.id;
 
   async function handleSendQuestion() {}
