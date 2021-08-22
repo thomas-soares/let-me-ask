@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 
 import logoImg from "../assets/images/logo.svg";
@@ -35,7 +36,11 @@ export function Room() {
         </div>
 
         <form>
-          <textarea placeholder="Oque você quer perguntar?" />
+          <textarea
+            placeholder="Oque você quer perguntar?"
+            onChange={(event) => setNewQuestion(event.target.value)}
+            value={newQuestion}
+          />
           <div className="form-footer">
             <span>
               Para enviar uma pergunta, <button>faça seu login</button>.
