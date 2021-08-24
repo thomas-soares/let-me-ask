@@ -28,7 +28,7 @@ export function Room() {
     roomRef.once("value", (room) => {
       console.log(room.val());
     });
-  }, []);
+  }, [roomId]);
 
   async function handleSendQuestion(event: FormEvent) {
     event.preventDefault();
