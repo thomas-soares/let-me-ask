@@ -24,6 +24,10 @@ export function Room() {
 
   useEffect(() => {
     const roomRef = database.ref(`rooms/${roomId}`);
+
+    roomRef.once("value", (room) => {
+      console.log(room.val());
+    });
   }, []);
 
   async function handleSendQuestion(event: FormEvent) {
