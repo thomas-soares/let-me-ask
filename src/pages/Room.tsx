@@ -44,7 +44,13 @@ export function Room() {
 
       const parsedQuestions = Object.entries(firebaseQuestions).map(
         ([key, value]) => {
-          return {};
+          return {
+            id: key,
+            content: value.content,
+            author: value.author,
+            isHighlighted: value.isHighlighted,
+            isAnswered: value.isAnswered,
+          };
         }
       );
     });
