@@ -43,7 +43,7 @@ export function Room() {
   const { user } = useAuth();
   const params = useParams<RoomParams>();
   const [newQuestion, setNewQuestion] = useState("");
-  const [question, setQuestion] = useState<Question[]>([]);
+  const [questions, setQuestions] = useState<Question[]>([]);
 
   const roomId = params.id;
 
@@ -65,6 +65,8 @@ export function Room() {
           };
         }
       );
+
+      setQuestions(parsedQuestions);
     });
   }, [roomId]);
 
