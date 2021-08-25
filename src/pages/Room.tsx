@@ -32,6 +32,7 @@ export function Room() {
   const { user } = useAuth();
   const params = useParams<RoomParams>();
   const [newQuestion, setNewQuestion] = useState("");
+  const [question, setQuestion] = useState([]);
 
   const roomId = params.id;
 
