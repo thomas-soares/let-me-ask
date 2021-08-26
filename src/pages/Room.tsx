@@ -109,7 +109,7 @@ export function Room() {
 
       <main>
         <div className="room-title">
-          <h1>Sala React</h1>
+          <h1>Sala {title}</h1>
           <span>4 perguntas</span>
         </div>
 
