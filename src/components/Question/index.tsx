@@ -1,3 +1,7 @@
 export function Question() {
-  return <div></div>;
+  return (
+    <div className="question">
+      <p></p>
+    </div>
+  );
 }
