@@ -1,3 +1,5 @@
+import "./style.scss";
+
 type QuestionProps = {
   content: string;
   author: {
