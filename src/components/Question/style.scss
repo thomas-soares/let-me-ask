@@ -7,4 +7,11 @@
   p {
     color: #29292e;
   }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+  }
 }
