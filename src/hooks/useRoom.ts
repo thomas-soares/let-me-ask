@@ -53,4 +53,6 @@ export function useRoom(roomId: string) {
       setQuestions(parsedQuestions);
     });
   }, [roomId]);
+
+  return { questions, title };
 }
