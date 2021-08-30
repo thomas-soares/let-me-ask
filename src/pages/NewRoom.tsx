@@ -5,7 +5,7 @@ import illustrationImg from "../assets/images/illustration.svg";
 import logoImg from "../assets/images/logo.svg";
 
 import { useAuth } from "../hooks/useAuth";
-import { Button } from "../components/Button/Button";
+import { Button } from "../components/Button";
 import { database } from "../services/firebase";
 
 import "../styles/auth.scss";
