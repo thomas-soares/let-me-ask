@@ -96,7 +96,13 @@ export function Room() {
                 key={question.id}
                 content={question.content}
                 author={question.author}
-              />
+              >
+                <button
+                  className="like-button"
+                  type="button"
+                  aria-label="Marcar como gostei"
+                ></button>
+              </Question>
             );
           })}
         </div>
