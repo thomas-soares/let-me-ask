@@ -44,6 +44,14 @@
         display: flex;
         align-items: flex-end;
         color: #737380;
+
+        &.liked {
+          color: #835afd;
+
+          svg path {
+            stroke: #835afd;
+          }
+        }
       }
     }
   }
