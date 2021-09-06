@@ -39,6 +39,7 @@
       border: 0;
       background: transparent;
       cursor: pointer;
+      transition: filter 0.2s;
 
       &.like-button {
         display: flex;
