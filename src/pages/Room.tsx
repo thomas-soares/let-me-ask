@@ -51,6 +51,8 @@ export function Room() {
     setNewQuestion("");
   }
 
+  async function handleLikeQuestion(questionId: string) {}
+
   return (
     <div id="page-room">
       <header>
