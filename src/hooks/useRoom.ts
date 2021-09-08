@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { database } from "../services/firebase";
+import { useAuth } from "./useAuth";
 
 type FirebaseQuestions = Record<
   string,
@@ -33,6 +34,7 @@ type QuestionType = {
 };
 
 export function useRoom(roomId: string) {
+  const { user } = useAuth();
   const [questions, setQuestions] = useState<QuestionType[]>([]);
   const [title, setTitle] = useState("");
 
