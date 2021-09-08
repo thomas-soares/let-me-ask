@@ -54,6 +54,9 @@ export function useRoom(roomId: string) {
             isHighlighted: value.isHighlighted,
             isAnswered: value.isAnswered,
             likeCount: Object.values(value.likes ?? {}).length,
+            hasLiked: Object.values(value.likes ?? {}).some(
+              (like) => like.authorId === user?.id
+            ),
           };
         }
       );
