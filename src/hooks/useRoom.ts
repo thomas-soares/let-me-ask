@@ -64,7 +64,7 @@ export function useRoom(roomId: string) {
       setTitle(databaseRoom.title);
       setQuestions(parsedQuestions);
     });
-  }, [roomId]);
+  }, [roomId, user?.id]);
 
   return { questions, title };
 }
