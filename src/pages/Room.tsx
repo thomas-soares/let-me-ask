@@ -109,7 +109,7 @@ export function Room() {
                   aria-label="Marcar como gostei"
                   onClick={() => handleLikeQuestion(question.id)}
                 >
-                  <span>10</span>
+                  {question.likeCount > 0 && <span>{question.likeCount}</span>}
                   <svg
                     width="24"
                     height="24"
