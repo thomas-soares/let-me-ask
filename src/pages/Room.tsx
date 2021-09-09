@@ -104,7 +104,7 @@ export function Room() {
                 author={question.author}
               >
                 <button
-                  className="like-button"
+                  className={`like-button ${question.hasLiked ? "liked" : ""}`}
                   type="button"
                   aria-label="Marcar como gostei"
                   onClick={() => handleLikeQuestion(question.id)}
