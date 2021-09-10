@@ -57,7 +57,7 @@ export function Room() {
   ) {
     if (likeId) {
       await database
-        .ref(`rooms/${roomId}/questions/${questionId}/likes${likeId}`)
+        .ref(`rooms/${roomId}/questions/${questionId}/likes/${likeId}`)
         .remove();
     } else {
       await database.ref(`rooms/${roomId}/questions/${questionId}/likes`).push({
