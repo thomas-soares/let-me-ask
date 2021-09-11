@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 
 import logoImg from "../assets/images/logo.svg";
+import deleteImg from "../assets/images/delete.svg";
 
 import { Button } from "../components/Button";
 import { Question } from "../components/Question";
