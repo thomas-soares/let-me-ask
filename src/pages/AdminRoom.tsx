@@ -23,6 +23,8 @@ export function AdminRoom() {
 
   const { questions, title } = useRoom(roomId);
 
+  function handleDeleteQuestion(questionId: string) {}
+
   return (
     <div id="page-room">
       <header>
@@ -49,7 +51,10 @@ export function AdminRoom() {
                 content={question.content}
                 author={question.author}
               >
-                <button>
+                <button
+                  type="button"
+                  onClick={() => handleDeleteQuestion(question.id)}
+                >
                   <img src={deleteImg} alt="Remover pergunta" />
                 </button>
               </Question>
