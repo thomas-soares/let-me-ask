@@ -23,7 +23,10 @@ export function AdminRoom() {
 
   const { questions, title } = useRoom(roomId);
 
-  function handleDeleteQuestion(questionId: string) {}
+  function handleDeleteQuestion(questionId: string) {
+    if (window.confirm("Tem certeza que deseja excluir esta pergunta?")) {
+    }
+  }
 
   return (
     <div id="page-room">
