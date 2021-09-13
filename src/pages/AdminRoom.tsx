@@ -9,6 +9,7 @@ import { RoomCode } from "../components/RoomCode";
 
 // import { useAuth } from "../hooks/useAuth";
 import { useRoom } from "../hooks/useRoom";
+import { database } from "../services/firebase";
 
 import "../styles/room.scss";
 
@@ -23,8 +24,9 @@ export function AdminRoom() {
 
   const { questions, title } = useRoom(roomId);
 
-  function handleDeleteQuestion(questionId: string) {
+  async function handleDeleteQuestion(questionId: string) {
     if (window.confirm("Tem certeza que deseja excluir esta pergunta?")) {
+      await database.ref(`rooms/${roomId}/questions/${questionId}`).remove();
     }
   }
 
