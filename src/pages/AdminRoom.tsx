@@ -24,7 +24,7 @@ export function AdminRoom() {
 
   const { questions, title } = useRoom(roomId);
 
-  async function handleEndRoom(roomId: string) {
+  async function handleEndRoom() {
     await database.ref(`rooms/${roomId}`).update({
       endedAt: new Date(),
     });
@@ -43,7 +43,9 @@ export function AdminRoom() {
           <img src={logoImg} alt="Let me ask" />
           <div>
             <RoomCode code={roomId} />
-            <Button isOutlined>Encerrar sala</Button>
+            <Button isOutlined onClick={handleEndRoom}>
+              Encerrar sala
+            </Button>
           </div>
         </div>
       </header>
