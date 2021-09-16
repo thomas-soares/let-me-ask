@@ -41,7 +41,11 @@ export function AdminRoom() {
     }
   }
 
-  async function handleCheckQuestionAsAnswered(questionId: string) {}
+  async function handleCheckQuestionAsAnswered(questionId: string) {
+    await database.ref(`rooms/${roomId}/questions/${questionId}`).update({
+      isAnnswered: true,
+    });
+  }
 
   async function handleHighlightQuestion(questionId: string) {}
 
