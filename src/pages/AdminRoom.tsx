@@ -77,7 +77,7 @@ export function AdminRoom() {
                 </button>
                 <button
                   type="button"
-                  onClick={() => handleDeleteQuestion(question.id)}
+                  onClick={() => handleHighlightQuestion(question.id)}
                 >
                   <img src={answerImg} alt="Dar destaque à pergunta" />
                 </button>
