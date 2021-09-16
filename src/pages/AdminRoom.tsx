@@ -41,6 +41,10 @@ export function AdminRoom() {
     }
   }
 
+  async function handleCheckQuestionAsAnswered(questionId: string) {}
+
+  async function handleHighlightQuestion(questionId: string) {}
+
   return (
     <div id="page-room">
       <header>
