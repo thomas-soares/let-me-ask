@@ -71,7 +71,7 @@ export function AdminRoom() {
               >
                 <button
                   type="button"
-                  onClick={() => handleDeleteQuestion(question.id)}
+                  onClick={() => handleCheckQuestionAsAnswered(question.id)}
                 >
                   <img src={checkImg} alt="Marcar pergunta como respondida" />
                 </button>
